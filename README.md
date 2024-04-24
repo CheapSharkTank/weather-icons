@@ -11,6 +11,6 @@ This is a project solely for icons of a weather app. I have also used Bootstrap 
           <div class="text-transparent cloud cloud_sm at_back"><i class="fa-solid fa-cloud"></i></div>
         </div>
 
-        # this is the code for "Partyl Cloudy" Icon
+        # this is the code for "Partly Cloudy" Icon
 
     -- You can also modify the design by tweaking the style.css file
