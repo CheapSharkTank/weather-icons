@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+    --size: 64px;
+    --size_sm: 32px;
+    --gradient: linear-gradient(to bottom, #fdc500, #fd8900);
+}
+
+body{
+    background-color: #0F2836;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* /////////////////////////////////// */
+.p-relative{
+    position: relative;
+}
+
+
+.group_container{
+    border: 2px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 2rem;
+    padding: 10px;
+}
+
+.icon{
+    width: var(--size);
+    height: var(--size);
+    font-size: var(--size);
+    color: #dcae08;
+}
+
+.icon-sm{
+    width: var(--size_sm);
+    height: var(--size_sm);
+    font-size: var(--size_sm);
+}
+
+.text-transparent{
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.cloud{
+    position: absolute;
+    background: linear-gradient(to top, #2BA6FF, #3badff41);
+    background-clip: text;
+}
+
+.cloud_xlg{
+    font-size: 3.25rem;
+}
+
+.cloud_lg{
+    font-size: 2.75rem;
+}
+.cloud_sm{
+    font-size: 1.75rem;
+}
+
+
+
+
+/* /////////////////////////////////// */
+/* Group 1 ICONS */
+
+.fa-sunny {
+    border-radius: 50%;
+
+    background-color: #fdc500; /* fallback color if gradients are not supported */
+    background-image: var(--gradient);
+    -webkit-box-shadow: 
+        0px 0px 17px 0px #fdc500, 
+        0px 0px 17px 0px #fd8900;
+
+    -moz-box-shadow: 
+        0px 0px 17px 0px #fdc500, 
+        0px 0px 17px 0px #fd8900;
+
+    box-shadow: 
+        0px 0px 17px 0px #fdc500, 
+        0px 0px 17px 0px #fd8900;
+}
+
+
+.fa-lightning{
+    font-size: var(--size);
+    color: #d1d506;
+    transform: rotate(20deg);
+    padding: 5px;
+}
+
+.fa-snow{
+    background: linear-gradient(to right, #0056D6, #9ec4e8);
+    background-clip: text;
+}
+
+.fa-cloud-bottom{
+    top: 30px;
+    right: 30px;
+}
+
+.fa-cloud-top{
+    top: 0;
+    left: 40px;
+
+}
+
+
+.fa-cloudy-night .moon{
+    font-size: 4.5rem;
+
+    background: var(--gradient);
+    background-clip: text;
+
+}
+
+.fa-moon-cloud-top{
+    top: 40px;
+    right: 25px;
+}
+
+.fa-moon-cloud-bottom{
+    top: 0;
+    left: 25px;
+}
+
+
+.wind{
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+
+    font-size: 2.5rem;
+
+    background: linear-gradient(to bottom, #D7F0FF, #0072DC);
+    background-clip: text;
+}
+
+.fa-xtreme-heat{
+    .thermometer{
+        font-size: 4rem;
+        background: linear-gradient(to top, #E20000, #ff24244d);
+        background-clip: text;
+
+        position: absolute;
+        top: 5%;
+        left: -50%;
+        
+    }
+}
+
+
+
+
+/* /////////////////////////////////// */
+/* Group 2 ICONS */
+.at_back{
+    z-index: -1;
+    position: absolute;
+    right: 0px;
+}
+
+
+
+/* For snowfall cloud */
+
+.snow-1{
+    z-index: -1;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.snow-2{
+    z-index: -1;
+    font-size: 1rem;
+    position: absolute;
+    bottom: -10px;
+    left: 20%;
+}
+
+
+/* for raindrops */
+.rain{
+    position: absolute;
+    background: linear-gradient(to top, #0056D6, #9ec4e8);
+    background-clip: text;
+}
+
+.raindrop-container{
+    transform: rotate(20deg);
+}
+
+.rain-1{
+    font-size: 16px;
+    top: 45px;
+    right: 20px;
+}
+
+.rain-2{
+    font-size: 14px;
+    top: 55px;
+    right: 7px;
+}
+
+.rain-3{
+    font-size: 1rem;
+    top: 35px;
+    right: -2px;
+}
+
+
+.fa-cloudy-windy > .wind{
+    z-index: -1;
+    bottom: -5px;
+}
+
+.fa-hailstorm,
+.fa-cloud-thunder{
+    background: linear-gradient(to top, #0056D6, #7fa3c5);
+    background-clip: text;
+}

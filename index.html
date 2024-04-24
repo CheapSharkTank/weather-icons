@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Icons</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- ///////////////////// GROUP 1 ///////////////////// -->
+      <div class="group_container"> 
+        <!-- Sunny -->
+        <div class="icon fa-sunny"></div>
+
+        <!-- Clear Night -->
+        <div class="icon fa-sunny-moon">
+          <i class="bi bi-moon-stars-fill"></i>
+        </div>
+
+        <!-- Thunder -->
+        <div class="icon fa-lightning">
+          <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+
+        <!-- Snowfall -->
+        <div class="icon text-transparent fa-snow"><i class="fas fa-snowflake"></i></div>
+
+        <!-- Cloudy (Sunny) -->
+        <div class="icon fa-sunny-cloudy p-relative">
+          <div class="icon fa-sunny"></div>
+          <div class="text-transparent cloud cloud_lg fa-cloud-bottom"><i class="fa-solid fa-cloud"></i></div>
+          <div class="text-transparent cloud cloud_sm fa-cloud-top"><i class="fa-solid fa-cloud"></i></div>
+        </div>
+
+        <!-- Cloudy (Night) -->
+        <div class="icon fa-cloudy-night">
+          <div class="moon p-relative">
+            <i class="text-transparent fa-solid fa-moon"></i>
+
+            <div class="text-transparent cloud cloud_lg fa-moon-cloud-top"><i class="fa-solid fa-cloud"></i></div>
+            <div class="text-transparent cloud cloud_sm fa-moon-cloud-bottom"><i class="fa-solid fa-cloud"></i></div>
+
+          </div>
+          
+        </div>
+
+
+        <!-- Windy (Sunny) -->
+        <div class="icon fa-windy-sunny p-relative">
+          <div class="icon fa-sunny">
+            <div class="wind text-transparent"><i class="fa-solid fa-wind"></i></div>
+          </div>
+        </div>
+
+        <!-- Windy (Night) -->
+        <div class="icon fa-windy-night p-relative">
+          <div class="icon fa-sunny-moon">
+            <i class="bi bi-moon-stars-fill"></i>
+            <div class="wind text-transparent"><i class="fa-solid fa-wind"></i></div>
+          </div>
+        </div>
+
+        <!-- Excessive Heat -->
+        <div class="icon fa-xtreme-heat p-relative">
+          <div class="icon fa-sunny"></div>
+          <i class="bi bi-thermometer text-transparent thermometer"></i>
+        </div>
+      </div>
+
+      <!-- ///////////////////// GROUP 2 ///////////////////// -->
+
+      <div class="group_container">
+        <!-- Partly Cloudy -->
+        <div class="icon fa-cloudy p-relative">
+          <div class="text-transparent cloud cloud_xlg"><i class="fa-solid fa-cloud"></i></div>
+          <div class="text-transparent cloud cloud_sm at_back"><i class="fa-solid fa-cloud"></i></div>
+        </div>
+
+        <!-- Partly Sunny -->
+        <div class="icon fa-cloudy-sun p-relative">
+          <div class="text-transparent cloud cloud_xlg"><i class="fa-solid fa-cloud"></i></div>
+          <div class="icon icon-sm fa-sunny at_back"></div>
+        </div>
+
+        <!-- Partly Cloudy Night -->
+        <div class="icon fa-night-cloudy p-relative">
+          <div class="text-transparent cloud cloud_xlg"><i class="fa-solid fa-cloud"></i></div>
+          <i class="bi bi-moon-stars-fill icon-sm at_back"></i>
+        </div>
+
+        <!-- Cloudy (Snowy) -->
+        <div class="icon fa-cloudy-snow p-relative">
+          <div class="text-transparent cloud cloud_xlg"><i class="fa-solid fa-cloud"></i></div>
+          <div class="icon icon-sm text-transparent fa-snow at_back"><i class="fas fa-snowflake"></i></div>
+        </div>
+
+        <!-- Snowfall -->
+        <div class="icon fa-cloudy-snowfall p-relative">
+
+          <div class="text-transparent cloud cloud_xlg"><i class="fa-solid fa-cloud"></i></div>
+          <div class="text-transparent fa-snow snow-1"><i class="fas fa-snowflake"></i></div>
+          <div class="text-transparent fa-snow snow-2"><i class="fas fa-snowflake"></i></div>
+
+        </div>
+
+        <!-- Rainfall -->
+        <div class="icon fa-cloudy-rainy p-relative">
+          <div class="text-transparent cloud cloud_xlg">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+
+          <div class="raindrop-container p-relative">
+            <i class="bi bi-droplet text-transparent rain rain-1"></i>
+            <i class="bi bi-droplet text-transparent rain rain-2"></i>
+            <i class="bi bi-droplet text-transparent rain rain-3"></i>
+
+          </div>
+        </div>
+
+        <!-- Windy Cloudy -->
+        <div class="icon fa-cloudy-windy p-relative">
+          <div class="text-transparent cloud cloud_xlg"><i class="fa-solid fa-cloud"></i></div>
+          <div class="wind text-transparent"><i class="fa-solid fa-wind"></i></div>
+        </div>
+
+        <!-- Cloudy (Hail) -->
+        <div class="icon fa-hailstorm text-transparent"><i class="bi bi-cloud-hail"></i></div>
+
+        <!-- Thunderstorm -->
+        <div class="icon fa-cloud-thunder text-transparent"><i class="bi bi-cloud-lightning-rain"></i></div>
+      </div>
+    </div>
+
+
+
+
+    <!-- 
+      GROUP 1:
+          Sunny
+          Clear Night
+          Thunder
+          Snowfall
+          Cloudy (Sunny)
+          Cloudy (Night)
+          Windy (Sunny)
+          Windy (Night)
+          Excessive Heat
+
+      GROUP 2:
+      
+          Partly Cloudy
+          Partly Sunny
+          Partly Cloudy Night
+          Cloudy (Snowy)
+          Snowfall
+          Rainfall
+          Windy Cloudy
+          Cloudy (Hail)
+          Thunderstorm
+     -->
+  </body>
+</html>
